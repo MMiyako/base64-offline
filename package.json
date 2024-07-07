@@ -4,12 +4,17 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "esbuild src/app.js --outfile=app.js --bundle",
+        "watch": "esbuild src/app.js --outfile=app.js --bundle --watch",
+        "production": "esbuild src/app.js --outfile=app.js --bundle --minify"
     },
     "type": "module",
     "author": "MMiyako",
     "license": "ISC",
     "dependencies": {
         "js-base64": "^3.7.7"
+    },
+    "devDependencies": {
+        "esbuild": "0.23.0"
     }
 }
