@@ -1,0 +1,15 @@
+{
+    "name": "base64-offline",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "type": "module",
+    "author": "MMiyako",
+    "license": "ISC",
+    "dependencies": {
+        "js-base64": "^3.7.7"
+    }
+}
