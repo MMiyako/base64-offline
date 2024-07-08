@@ -9,10 +9,6 @@ body {
     padding: 20px;
 }
 
-h3 {
-    margin: 5px 0;
-}
-
 div {
     display: flex
 }
@@ -52,4 +48,33 @@ button span {
 
 button:hover {
     background-color: #c2c2c2;
+}
+
+button span.smaller {
+    font-size: 18px;
+}
+
+button span.alert {
+    color: #f13737;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h3 {
+    margin: 5px 0;
+}
+
+.header span {
+    font-size: 14px;
+}
+
+.header button.copied {
+    color: #ffffff;
+    background-color: #05991e;
+    border-color: #000000;
+    box-shadow: 0 0 8px 1px #05991e;
 }
