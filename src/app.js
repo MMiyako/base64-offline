@@ -14,6 +14,8 @@ $decodeBtn.addEventListener("click", () => {
     let decoded = Base64.decode(encoded);
 
     $decoded.value = decoded;
+    $decoded.classList.add("processed");
+    $encoded.classList.remove("processed");
 });
 
 $encodeBtn.addEventListener("click", () => {
@@ -24,6 +26,8 @@ $encodeBtn.addEventListener("click", () => {
     let encoded = Base64.encode(decoded);
 
     $encoded.value = encoded;
+    $encoded.classList.add("processed");
+    $decoded.classList.remove("processed");
 });
 
 $clearBtn.addEventListener("click", () => {
@@ -32,6 +36,8 @@ $clearBtn.addEventListener("click", () => {
 
     $encoded.value = "";
     $decoded.value = "";
+    $encoded.classList.remove("processed");
+    $decoded.classList.remove("processed");
     $encoded.focus();
 });
 
